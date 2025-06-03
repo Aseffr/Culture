@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Культура Таджикистана</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Рекламный баннер с фейк-крестиком -->
+     <a href="https://nbt.tj/ru/" target="_blank"> <div class="ad-banner" id="adBanner">
+        <span class="close-btn" id="fakeClose">×</span>
+            <img src="images/0.jpg" alt="Реклама Банка Таджикистана">
+    </div>
+    </a>    
+
+    <header>
+        <h1>Культура Таджикистана</h1>
+    </header>
+
+    <main>
+        <section class="video-section">
+            <h2>Видео о Таджикистане</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="video/1.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="grid-section">
+            <h2>Достопримечательности</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="images/1.jpg" alt="Памир">
+                    <p>Памир - "Крыша мира"</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/1.gif" alt="Искандеркуль">
+                    <p>Озеро Искандеркуль</p>
+                </div>
+                <div class="grid-item">
+                    <a href="https://ru.wikipedia.org/wiki/Гиссарская_крепость"><img src="images/2.jpg" alt="Гиссарская крепость"></a>
+                    <p>Гиссарская крепость</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/3.jpg" alt="Душанбе">
+                    <p>Столица Душанбе</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-section">
+            <h2>Традиции и обычаи</h2>
+            <p>Таджикистан имеет богатую культуру, уходящую корнями в древнюю персидскую цивилизацию...</p>
+            <a href="https://ru.wikipedia.org/wiki/Навруз"><img src="images/4.jpg" alt="Праздник Навруз">
+        </section>
+    </main>
+
+    <footer>
+        <a href="quiz.html" class="quiz-button">Пройти тест о Таджикистане</a>
+    </footer>
+
+    <script>
+        // Фейк-крестик для рекламы
+        document.getElementById('fakeClose').addEventListener('click', function() {
+            alert('Реклама скрыта (но на самом деле нет)');
+            // На самом деле баннер остается, это фейк-крестик
+        });
+
+        // Фиксированный рекламный баннер при скролле
+        window.onscroll = function() {
+            var adBanner = document.getElementById('adBanner');
+            if (window.pageYOffset > 100) {
+                adBanner.classList.add('fixed-ad');
+            } else {
+                adBanner.classList.remove('fixed-ad');
+            }
+        };
+    </script>
+</body>
+</html>

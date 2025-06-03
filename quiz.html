@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест о Таджикистане</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Тест: Культура Таджикистана</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Какое озеро называют "жемчужиной Таджикистана"?</p>
+                <label><input type="radio" name="q1" value="a"> Искандеркуль</label>
+                <label><input type="radio" name="q1" value="b"> Байкал</label>
+                <label><input type="radio" name="q1" value="c"> Каспийское море</label>
+            </div>
+
+            <div class="question">
+                <p>2. Как называется древний праздник весны в Таджикистане?</p>
+                <label><input type="radio" name="q2" value="a"> Навруз</label>
+                <label><input type="radio" name="q2" value="b"> Сада</label>
+                <label><input type="radio" name="q2" value="c"> Мехрган</label>
+            </div>
+
+            <div class="question">
+                <p>3. Какой горный массив называют "Крышей мира"?</p>
+                <label><input type="radio" name="q3" value="a"> Гималаи</label>
+                <label><input type="radio" name="q3" value="b"> Памир</label>
+                <label><input type="radio" name="q3" value="c"> Тянь-Шань</label>
+            </div>
+
+            <div class="question">
+                <p>4. Частью какого заповедника является Гиссарская крепость?</p>
+                <label><input type="radio" name="q4" value="a"> Рамит</label>
+                <label><input type="radio" name="q4" value="b"> Зоркуль</label>
+                <label><input type="radio" name="q4" value="c"> Хисор</label>
+            </div>
+
+            <div class="question">
+                <p>5. Ширина Гиссарской стены состовляет?</p>
+                <label><input type="radio" name="q5" value="a"> 5 метров</label>
+                <label><input type="radio" name="q5" value="b"> 10 метров</label>
+                <label><input type="radio" name="q5" value="c"> 15 метров</label>
+            </div>
+
+            <button type="button" id="submitQuiz">Проверить ответы</button>
+        </form>
+
+        <div id="quizResult" class="hidden">
+            <h2>Ваш результат: <span id="score">0</span>/5</h2>
+            <p id="resultText"></p>
+            <a href="index.html" class="back-button">Вернуться на главную</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
